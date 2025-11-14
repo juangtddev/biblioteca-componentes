@@ -1,0 +1,43 @@
+{
+  "logo": {
+    "type": "text",
+    "content": "SuaLogo"
+  },
+  "links": [
+    {
+      "text": "Sobre",
+      "href": "#sobre"
+    },
+    {
+      "text": "Serviços",
+      "href": "#servicos"
+    },
+    {
+      "text": "Preços",
+      "href": "#precos"
+    }
+  ],
+  "ctas": [
+    {
+      "text": "Login",
+      "href": "/login",
+      "variant": "ghost"
+    },
+    {
+      "text": "Começar Agora",
+      "href": "/signup",
+      "variant": "default"
+    }
+  ],
+  "styles": {
+    "--header-bg": "hsl(0 0% 100%)",
+    "--header-fg": "hsl(222 47% 11%)",
+    "--header-border": "hsl(214 32% 91%)",
+    "--header-height": "4rem",
+    "--header-padding-x": "2rem",
+    "--link-color": "hsl(215 20% 65%)",
+    "--link-hover-color": "hsl(222 47% 11%)",
+    "--primary": "hsl(222 47% 11%)",
+    "--primary-foreground": "hsl(210 40% 98%)"
+  }
+}
