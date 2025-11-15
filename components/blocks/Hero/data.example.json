@@ -7,12 +7,12 @@
   "ctas": [
     {
       "text": "Começar Agora",
-      "href": "#",
+      "href": "#1",
       "variant": "default"
     },
     {
       "text": "Ver no GitHub",
-      "href": "#",
+      "href": "#2",
       "variant": "outline"
     }
   ],
@@ -30,7 +30,8 @@
     "--hero-text-align": "left",
     "--hero-content-gap": "4rem",
     "--hero-min-height": "calc(100vh - 4rem)",
-    "--hero-padding": "2rem",
+    "--hero-padding-y": "4rem",
+    "--hero-padding-x": "2rem",
     "--hero-title-color": "hsl(222 47% 11%)",
     "--hero-subtitle-color": "hsl(222 47% 11%)",
     "--hero-text-color": "hsl(215 20% 65%)",

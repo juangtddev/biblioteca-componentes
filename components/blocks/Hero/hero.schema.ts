@@ -47,8 +47,9 @@ export const heroSchema = z.object({
       '--hero-content-gap': z.string().optional(),
 
       // Espaçamento
-      '--hero-min-height': z.string().optional(),
-      '--hero-padding': z.string().optional(),
+      '--hero-min-height': z.string().optional(), // ex: '75vh'
+      '--hero-padding-y': z.string().optional(), // ex: '6rem'
+      '--hero-padding-x': z.string().optional(), // ex: '2rem'
 
       // Cores
       '--hero-title-color': z.string().optional(),

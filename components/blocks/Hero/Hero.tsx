@@ -16,7 +16,8 @@ export function Hero({ data }: HeroProps) {
   const defaultStyles = {
     '--hero-background': 'hsl(0 0% 100%)',
     '--hero-min-height': '50vh',
-    '--hero-padding': '4rem 2rem',
+    '--hero-padding-y': '4rem',
+    '--hero-padding-x': '1rem',
     '--hero-layout-direction': 'column',
     '--hero-align-items': 'center',
     '--hero-justify-content': 'center',
@@ -31,78 +32,110 @@ export function Hero({ data }: HeroProps) {
 
   return (
     <section
-      // 1. Aplica as CSS Variables
+      // 1. O <section> (RAIZ) cuida do fundo e altura
       style={combinedStyles}
-      // 2. Usa as CSS Variables com Tailwind
       className={cn(
-        'w-full flex',
+        'w-full',
+        'bg-(--hero-background)',
         'min-h-(--hero-min-height)',
-        'p-(--hero-padding)',
-        'bg-(--hero-background)', // Usa a super-propriedade 'background'
-        'flex-(--hero-layout-direction)', // 'flex-col' ou 'flex-row'
-        'items-[var(--hero-align-items)]', // 'items-center'
-        'justify-[var(--hero-justify-content)]', // 'justify-center'
-        'text-(--hero-text-align)', // 'text-center'
+        // Aplicamos o padding vertical aqui
+        'py-(--hero-padding-y,4rem)',
       )}
     >
-      {/* Container de Conteúdo (Texto) */}
-      <div className="flex flex-col gap-(--hero-content-gap)">
-        {title && (
-          <h1
-            className="text-4xl md:text-6xl font-bold"
-            style={{ color: 'var(--hero-title-color)' }}
-          >
-            {title}
-          </h1>
+      {/* 2. O <div> (INTERNO) cuida do container e do layout flex */}
+      <div
+        className={cn(
+          'container mx-auto h-full flex', // Limita a largura!
+
+          // --- MOBILE-FIRST (Padrão) ---
+          'flex-col items-center justify-center text-center gap-8',
+
+          // --- DESKTOP (Vem do JSON) ---
+          'md:flex-(--hero-layout-direction,row)',
+          'md:items-(--hero-align-items,center)',
+          'md:justify-(--hero-justify-content,space-between)',
+          'md:gap-(--hero-content-gap,2rem)',
+          // Aplicamos o padding horizontal aqui
+          'px-(--hero-padding-x,1rem)',
         )}
-        {subtitle && (
-          <p
-            className="text-lg md:text-xl"
-            style={{
-              color: 'var(--hero-subtitle-color, var(--hero-text-color))',
-            }}
-          >
-            {subtitle}
-          </p>
-        )}
-        {paragraphs &&
-          paragraphs.map((p, idx) => (
-            <p
-              key={idx}
-              className="text-base"
-              style={{ color: 'var(--hero-text-color)' }}
+      >
+        {/* Container de Conteúdo (Texto) */}
+        <div
+          className={cn(
+            'flex flex-col',
+            // Correção do TypeScript: usar 'gap' do Tailwind com a variável
+            'gap-(--hero-content-gap,1.5rem)',
+            // Alinhamento do conteúdo de texto (mobile-first)
+            'items-center text-center',
+            // Alinhamento Desktop (do JSON)
+            'md:items-(--hero-text-align,flex-start)',
+            'md:text-(--hero-text-align,left)',
+          )}
+        >
+          {title && (
+            <h1
+              className="text-4xl md:text-6xl font-bold"
+              style={{ color: 'var(--hero-title-color)' }}
             >
-              {p}
+              {title}
+            </h1>
+          )}
+          {subtitle && (
+            <p
+              className="text-lg md:text-xl"
+              style={{
+                color: 'var(--hero-subtitle-color, var(--hero-text-color))',
+              }}
+            >
+              {subtitle}
             </p>
-          ))}
-        {ctas && ctas.length > 0 && (
-          <div
-            className={cn(
-              'flex flex-wrap gap-4',
-              'justify-[var(--hero-align-items)]', // Reusa o align para os botões
-            )}
-          >
-            {ctas.map((cta) => (
-              <Button key={cta.href} variant={cta.variant} asChild>
-                <Link href={cta.href}>{cta.text}</Link>
-              </Button>
+          )}
+          {paragraphs &&
+            paragraphs.map((p, idx) => (
+              <p
+                key={idx} // Usar 'idx' para a key dos parágrafos
+                className="text-base"
+                style={{ color: 'var(--hero-text-color)' }}
+              >
+                {p}
+              </p>
             ))}
+          {ctas && ctas.length > 0 && (
+            <div
+              className={cn(
+                'flex flex-wrap gap-4',
+                // Alinhamento dos botões (mobile-first)
+                'justify-center',
+                // Alinhamento Desktop (do JSON)
+                'md:justify-[var(--hero-text-align,flex-start)]',
+              )}
+            >
+              {ctas.map((cta, index) => (
+                <Button
+                  key={index} // Correção da Key: Usar 'index' para garantir unicidade
+                  variant={cta.variant}
+                  asChild
+                >
+                  <Link href={cta.href}>{cta.text}</Link>
+                </Button>
+              ))}
+            </div>
+          )}
+        </div>
+
+        {/* Container de Imagem (Opcional) */}
+        {foregroundImage && (
+          <div className="shrink-0">
+            <Image
+              src={foregroundImage.src}
+              alt={foregroundImage.alt}
+              width={foregroundImage.width}
+              height={foregroundImage.height}
+              className="rounded-lg object-cover"
+            />
           </div>
         )}
       </div>
-
-      {/* Container de Imagem (Opcional) */}
-      {foregroundImage && (
-        <div className="shrink-0">
-          <Image
-            src={foregroundImage.src}
-            alt={foregroundImage.alt}
-            width={foregroundImage.width}
-            height={foregroundImage.height}
-            className="rounded-lg object-cover"
-          />
-        </div>
-      )}
     </section>
   );
 }
