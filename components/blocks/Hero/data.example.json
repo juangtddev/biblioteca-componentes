@@ -1,0 +1,40 @@
+{
+  "title": "Construa Landing Pages 10x Mais Rápido",
+  "subtitle": "Minha biblioteca de blocos",
+  "paragraphs": [
+    "Use esta arquitetura para criar sites de clientes com Zod, Tailwind e CSS Variables para máxima flexibilidade."
+  ],
+  "ctas": [
+    {
+      "text": "Começar Agora",
+      "href": "#",
+      "variant": "default"
+    },
+    {
+      "text": "Ver no GitHub",
+      "href": "#",
+      "variant": "outline"
+    }
+  ],
+  "foregroundImage": {
+    "src": "https://images.unsplash.com/photo-1551434678-e076c223a692?w=500&h=500&fit=crop",
+    "alt": "Abstrato",
+    "width": 500,
+    "height": 500
+  },
+  "styles": {
+    "--hero-background": "hsl(210 40% 98%)",
+    "--hero-layout-direction": "row",
+    "--hero-align-items": "center",
+    "--hero-justify-content": "space-between",
+    "--hero-text-align": "left",
+    "--hero-content-gap": "4rem",
+    "--hero-min-height": "calc(100vh - 4rem)",
+    "--hero-padding": "2rem",
+    "--hero-title-color": "hsl(222 47% 11%)",
+    "--hero-subtitle-color": "hsl(222 47% 11%)",
+    "--hero-text-color": "hsl(215 20% 65%)",
+    "--primary": "hsl(222 47% 11%)",
+    "--primary-foreground": "hsl(210 40% 98%)"
+  }
+}
