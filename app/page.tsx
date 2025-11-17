@@ -2,23 +2,29 @@ import { Header } from '@/components/blocks/Header';
 import { headerSchema } from '@/components/blocks/Header/header.schema';
 import headerData from '@/components/blocks/Header/data.example.json';
 
-// 1. Importar o Hero
 import { Hero } from '@/components/blocks/Hero';
 import { heroSchema } from '@/components/blocks/Hero/hero.schema';
 import heroData from '@/components/blocks/Hero/data.example.json';
 
+// 1. Importar o Features
+import { Features } from '@/components/blocks/Features';
+import { featuresSchema } from '@/components/blocks/Features/features.schema';
+import featuresData from '@/components/blocks/Features/data.example.json';
+
 export default function Home() {
-  // 2. Validar os dados de ambos
+  // 2. Validar os dados
   const validatedHeaderData = headerSchema.parse(headerData);
   const validatedHeroData = heroSchema.parse(heroData);
+  const validatedFeaturesData = featuresSchema.parse(featuresData);
 
   return (
     <main>
-      {/* 3. Renderizar ambos */}
       <Header data={validatedHeaderData} />
       <Hero data={validatedHeroData} />
+      {/* 3. Renderizar o novo bloco */}
+      <Features data={validatedFeaturesData} />
 
-      {/* Conteúdo de placeholder */}
+      {/* Placeholder */}
       <div className="h-screen bg-gray-100 p-24">
         <h1 className="text-4xl font-bold">Conteúdo Restante</h1>
       </div>

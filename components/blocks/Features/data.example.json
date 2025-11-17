@@ -1,0 +1,47 @@
+{
+  "title": "Tudo o que você precisa",
+  "subtitle": "Nossa plataforma é completa e flexível para se adaptar ao seu negócio.",
+  "cards": [
+    {
+      "icon": "Zap",
+      "title": "Rápido e Eficiente",
+      "text": "Performance otimizada para carregar seu site em milissegundos."
+    },
+    {
+      "icon": "ShieldCheck",
+      "title": "Seguro por Padrão",
+      "text": "Proteção robusta contra ameaças e total conformidade com a LGPD."
+    },
+    {
+      "icon": "LayoutGrid",
+      "title": "Layouts Flexíveis",
+      "text": "Construa qualquer tipo de página com nossa biblioteca de blocos."
+    }
+  ],
+  "ctas": [
+    {
+      "text": "Ver todos os recursos",
+      "href": "#",
+      "variant": "default"
+    }
+  ],
+  "styles": {
+    "--features-background": "hsl(210 40% 98%)",
+    "--features-padding-y": "5rem",
+    "--features-text-align": "center",
+    "--features-title-color": "hsl(222 47% 11%)",
+    "--features-subtitle-color": "hsl(215 20% 65%)",
+    "--features-grid-template-columns": "repeat(3, 1fr)",
+    "--features-grid-gap": "2rem",
+    "--card-background": "hsl(0 0% 100%)",
+    "--card-padding": "2rem",
+    "--card-border-radius": "0.5rem",
+    "--card-text-align": "left",
+    "--card-icon-color": "hsl(222 47% 11%)",
+    "--card-icon-size": "2rem",
+    "--card-title-color": "hsl(222 47% 11%)",
+    "--card-text-color": "hsl(215 20% 65%)",
+    "--primary": "hsl(222 47% 11%)",
+    "--primary-foreground": "hsl(210 40% 98%)"
+  }
+}
