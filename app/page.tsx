@@ -11,18 +11,23 @@ import { Features } from '@/components/blocks/Features';
 import { featuresSchema } from '@/components/blocks/Features/features.schema';
 import featuresData from '@/components/blocks/Features/data.example.json';
 
+import { Pricing } from '@/components/blocks/Pricing';
+import { pricingSchema } from '@/components/blocks/Pricing/pricing.schema';
+import pricingData from '@/components/blocks/Pricing/data.example.json';
+
 export default function Home() {
   // 2. Validar os dados
   const validatedHeaderData = headerSchema.parse(headerData);
   const validatedHeroData = heroSchema.parse(heroData);
   const validatedFeaturesData = featuresSchema.parse(featuresData);
+  const validatedPricingData = pricingSchema.parse(pricingData);
 
   return (
     <main>
       <Header data={validatedHeaderData} />
       <Hero data={validatedHeroData} />
-      {/* 3. Renderizar o novo bloco */}
       <Features data={validatedFeaturesData} />
+      <Pricing data={validatedPricingData} />
 
       {/* Placeholder */}
       <div className="h-screen bg-gray-100 p-24">
