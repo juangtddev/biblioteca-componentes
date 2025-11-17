@@ -1,0 +1,117 @@
+{
+  "title": "Planos que cabem no seu bolso",
+  "subtitle": "Escolha o plano que melhor se adapta à sua necessidade e comece hoje mesmo.",
+  "cards": [
+    {
+      "top": {
+        "imageUrl": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600",
+        "icon": "Package",
+        "title": "Básico",
+        "subtitle": "Para quem está começando"
+      },
+      "bottom": {
+        "benefits": [
+          {
+            "icon": "Check",
+            "text": "1 Landing Page"
+          },
+          {
+            "icon": "Check",
+            "text": "Hospedagem Inclusa"
+          },
+          {
+            "icon": "X",
+            "text": "Suporte Prioritário"
+          }
+        ],
+        "cta": {
+          "text": "Começar Agora",
+          "href": "#",
+          "variant": "outline"
+        }
+      }
+    },
+    {
+      "top": {
+        "imageUrl": "https://images.unsplash.com/photo-1550745165-9bc0b252726c?w=600",
+        "icon": "PackageOpen",
+        "title": "Profissional",
+        "subtitle": "Para negócios em crescimento"
+      },
+      "bottom": {
+        "benefits": [
+          {
+            "icon": "Check",
+            "text": "5 Landing Pages"
+          },
+          {
+            "icon": "Check",
+            "text": "Hospedagem Inclusa"
+          },
+          {
+            "icon": "Check",
+            "text": "Suporte Prioritário"
+          }
+        ],
+        "cta": {
+          "text": "Escolher Plano",
+          "href": "#",
+          "variant": "default"
+        }
+      }
+    },
+    {
+      "top": {
+        "imageUrl": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600",
+        "icon": "PackageCheck",
+        "title": "Enterprise",
+        "subtitle": "Para grandes volumes"
+      },
+      "bottom": {
+        "benefits": [
+          {
+            "icon": "Check",
+            "text": "Landing Pages Ilimitadas"
+          },
+          {
+            "icon": "Check",
+            "text": "Hospedagem Dedicada"
+          },
+          {
+            "icon": "Check",
+            "text": "Suporte 24/7"
+          }
+        ],
+        "cta": {
+          "text": "Entrar em Contato",
+          "href": "#",
+          "variant": "outline"
+        }
+      }
+    }
+  ],
+  "styles": {
+    "--section-background": "hsl(0 0% 100%)",
+    "--section-padding-y": "5rem",
+    "--section-text-align": "center",
+    "--section-title-color": "hsl(222 47% 11%)",
+    "--section-subtitle-color": "hsl(215 20% 65%)",
+    "--grid-template-columns": "repeat(3, 1fr)",
+    "--grid-gap": "2rem",
+    "--card-background": "hsl(0 0% 100%)",
+    "--card-border-radius": "0.75rem",
+    "--card-top-bg-overlay": "hsla(222, 47%, 11%, 0.6)",
+    "--card-top-min-height": "200px",
+    "--card-top-padding": "1.5rem",
+    "--card-top-icon-color": "hsl(0 0% 100%)",
+    "--card-top-icon-size": "2rem",
+    "--card-top-title-color": "hsl(0 0% 100%)",
+    "--card-top-subtitle-color": "hsl(0 0% 90%)",
+    "--card-bottom-padding": "1.5rem",
+    "--benefit-icon-color": "hsl(222 47% 11%)",
+    "--benefit-text-color": "hsl(215 20% 65%)",
+    "--benefit-icon-size": "1rem",
+    "--primary": "hsl(222 47% 11%)",
+    "--primary-foreground": "hsl(210 40% 98%)"
+  }
+}
