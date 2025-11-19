@@ -1,0 +1,52 @@
+{
+  "title": "Como funciona",
+  "subtitle": "Em apenas 3 passos simples você coloca seu projeto no ar.",
+  "steps": [
+    {
+      "number": "1",
+      "icon": "MousePointerClick",
+      "title": "Escolha os Blocos",
+      "text": "Selecione os componentes que você precisa na nossa biblioteca."
+    },
+    {
+      "number": "2",
+      "icon": "Settings2",
+      "title": "Configure o JSON",
+      "text": "Ajuste cores, textos e layouts através de um simples arquivo de dados."
+    },
+    {
+      "number": "3",
+      "icon": "Rocket",
+      "title": "Publique",
+      "text": "Copie o código e veja sua landing page pronta em minutos."
+    }
+  ],
+  "cta": {
+    "text": "Começar Agora",
+    "href": "#",
+    "variant": "default"
+  },
+  "styles": {
+    "--section-background": "hsl(210 40% 98%)",
+    "--section-padding-y": "5rem",
+    "--section-text-align": "center",
+    "--section-title-color": "hsl(222 47% 11%)",
+    "--section-subtitle-color": "hsl(215 20% 65%)",
+    "--grid-template-columns": "repeat(3, 1fr)",
+    "--grid-gap": "3rem",
+    "--step-card-bg": "transparent",
+    "--step-card-padding": "0",
+    "--step-card-radius": "0",
+    "--step-card-align": "center",
+    "--number-bg": "hsl(222 47% 11%)",
+    "--number-color": "hsl(210 40% 98%)",
+    "--number-size": "3rem",
+    "--number-font-size": "1.25rem",
+    "--icon-color": "hsl(222 47% 11%)",
+    "--icon-size": "2.5rem",
+    "--step-title-color": "hsl(222 47% 11%)",
+    "--step-text-color": "hsl(215 20% 65%)",
+    "--primary": "hsl(222 47% 11%)",
+    "--primary-foreground": "hsl(210 40% 98%)"
+  }
+}
