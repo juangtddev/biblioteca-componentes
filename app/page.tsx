@@ -15,12 +15,17 @@ import { Pricing } from '@/components/blocks/Pricing';
 import { pricingSchema } from '@/components/blocks/Pricing/pricing.schema';
 import pricingData from '@/components/blocks/Pricing/data.example.json';
 
+import { HowItWorks } from '@/components/blocks/HowItWorks';
+import { howItWorksSchema } from '@/components/blocks/HowItWorks/how-it-works.schema';
+import howItWorksData from '@/components/blocks/HowItWorks/data.example.json';
+
 export default function Home() {
   // 2. Validar os dados
   const validatedHeaderData = headerSchema.parse(headerData);
   const validatedHeroData = heroSchema.parse(heroData);
   const validatedFeaturesData = featuresSchema.parse(featuresData);
   const validatedPricingData = pricingSchema.parse(pricingData);
+  const validatedHowItWorksData = howItWorksSchema.parse(howItWorksData);
 
   return (
     <main>
@@ -28,6 +33,7 @@ export default function Home() {
       <Hero data={validatedHeroData} />
       <Features data={validatedFeaturesData} />
       <Pricing data={validatedPricingData} />
+      <HowItWorks data={validatedHowItWorksData} />
 
       {/* Placeholder */}
       <div className="h-screen bg-gray-100 p-24">
