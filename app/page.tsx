@@ -6,7 +6,6 @@ import { Hero } from '@/components/blocks/Hero';
 import { heroSchema } from '@/components/blocks/Hero/hero.schema';
 import heroData from '@/components/blocks/Hero/data.example.json';
 
-// 1. Importar o Features
 import { Features } from '@/components/blocks/Features';
 import { featuresSchema } from '@/components/blocks/Features/features.schema';
 import featuresData from '@/components/blocks/Features/data.example.json';
@@ -19,6 +18,10 @@ import { HowItWorks } from '@/components/blocks/HowItWorks';
 import { howItWorksSchema } from '@/components/blocks/HowItWorks/how-it-works.schema';
 import howItWorksData from '@/components/blocks/HowItWorks/data.example.json';
 
+import { Footer } from '@/components/blocks/Footer';
+import { footerSchema } from '@/components/blocks/Footer/footer.schema';
+import footerData from '@/components/blocks/Footer/data.example.json';
+
 export default function Home() {
   // 2. Validar os dados
   const validatedHeaderData = headerSchema.parse(headerData);
@@ -26,6 +29,7 @@ export default function Home() {
   const validatedFeaturesData = featuresSchema.parse(featuresData);
   const validatedPricingData = pricingSchema.parse(pricingData);
   const validatedHowItWorksData = howItWorksSchema.parse(howItWorksData);
+  const validatedFooterData = footerSchema.parse(footerData);
 
   return (
     <main>
@@ -34,6 +38,7 @@ export default function Home() {
       <Features data={validatedFeaturesData} />
       <Pricing data={validatedPricingData} />
       <HowItWorks data={validatedHowItWorksData} />
+      <Footer data={validatedFooterData} />
 
       {/* Placeholder */}
       <div className="h-screen bg-gray-100 p-24">
