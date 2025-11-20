@@ -1,0 +1,71 @@
+{
+  "brand": {
+    "logo": {
+      "type": "text",
+      "content": "SuaMarca"
+    },
+    "description": "Facilitando a criação de landing pages de alta conversão com tecnologia de ponta e design flexível."
+  },
+  "nav1": {
+    "title": "Links Rápidos",
+    "links": [
+      {
+        "text": "Início",
+        "href": "/"
+      },
+      {
+        "text": "Sobre",
+        "href": "#sobre"
+      },
+      {
+        "text": "Projetos",
+        "href": "#projetos"
+      },
+      {
+        "text": "Blog",
+        "href": "#blog"
+      }
+    ]
+  },
+  "nav2": {
+    "title": "Serviços",
+    "links": [
+      {
+        "text": "Desenvolvimento Web",
+        "href": "#"
+      },
+      {
+        "text": "Design UI/UX",
+        "href": "#"
+      },
+      {
+        "text": "Consultoria SEO",
+        "href": "#"
+      },
+      {
+        "text": "Marketing Digital",
+        "href": "#"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contato",
+    "phone": "+55 (11) 99999-9999",
+    "email": "contato@suamarca.com",
+    "address": "Av. Paulista, 1000 - SP"
+  },
+  "bottom": {
+    "copyrightText": "© 2025 Sua Empresa. Todos os direitos reservados."
+  },
+  "styles": {
+    "--footer-bg": "hsl(222 47% 11%)",
+    "--footer-text-color": "hsl(215 20% 65%)",
+    "--footer-title-color": "hsl(210 40% 98%)",
+    "--footer-link-color": "hsl(215 20% 65%)",
+    "--footer-link-hover": "hsl(210 40% 98%)",
+    "--footer-border-color": "hsl(217 19% 27%)",
+    "--footer-padding-y": "4rem",
+    "--footer-gap": "2rem",
+    "--icon-color": "hsl(210 40% 98%)"
+  }
+}
