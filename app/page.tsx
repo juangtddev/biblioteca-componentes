@@ -18,6 +18,10 @@ import { HowItWorks } from '@/components/blocks/HowItWorks';
 import { howItWorksSchema } from '@/components/blocks/HowItWorks/how-it-works.schema';
 import howItWorksData from '@/components/blocks/HowItWorks/data.example.json';
 
+import { Contact } from '@/components/blocks/Contact';
+import { contactSchema } from '@/components/blocks/Contact/contact.schema';
+import contactData from '@/components/blocks/Contact/data.example.json';
+
 import { Footer } from '@/components/blocks/Footer';
 import { footerSchema } from '@/components/blocks/Footer/footer.schema';
 import footerData from '@/components/blocks/Footer/data.example.json';
@@ -29,6 +33,7 @@ export default function Home() {
   const validatedFeaturesData = featuresSchema.parse(featuresData);
   const validatedPricingData = pricingSchema.parse(pricingData);
   const validatedHowItWorksData = howItWorksSchema.parse(howItWorksData);
+  const validatedContactData = contactSchema.parse(contactData);
   const validatedFooterData = footerSchema.parse(footerData);
 
   return (
@@ -38,6 +43,7 @@ export default function Home() {
       <Features data={validatedFeaturesData} />
       <Pricing data={validatedPricingData} />
       <HowItWorks data={validatedHowItWorksData} />
+      <Contact data={validatedContactData} />
       <Footer data={validatedFooterData} />
     </main>
   );

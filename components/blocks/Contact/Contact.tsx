@@ -42,7 +42,7 @@ export function Contact({ data }: ContactProps) {
       className={cn(
         'w-full',
         '[background:var(--section-bg)]',
-        'py-[var(--section-padding-y)]',
+        'py-(--section-padding-y)',
       )}
     >
       <div className="container mx-auto">
@@ -51,7 +51,7 @@ export function Contact({ data }: ContactProps) {
           <div
             className={cn(
               'flex flex-col gap-4 mb-12',
-              'text-[var(--section-text-align)]',
+              'text-(--section-text-align)',
               'items-[var(--section-text-align)]',
             )}
           >
@@ -75,13 +75,13 @@ export function Contact({ data }: ContactProps) {
         )}
 
         {/* --- Conteúdo Principal (Grid 2 Colunas) --- */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-[var(--grid-gap)] items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-(--grid-gap) items-start">
           {/* Coluna 1: Cards de Informação */}
           {infoCards && (
             <div className="flex flex-col gap-6">
               {infoCards.map((card, index) => {
                 // Renderiza como <a> se tiver link, senão como <div>
-                const Tag = card.href ? Link : 'div';
+                const Tag = (card.href ? Link : 'div') as React.ElementType;
                 const hrefProps = card.href ? { href: card.href } : {};
 
                 return (
