@@ -39,11 +39,6 @@ export default function Home() {
       <Pricing data={validatedPricingData} />
       <HowItWorks data={validatedHowItWorksData} />
       <Footer data={validatedFooterData} />
-
-      {/* Placeholder */}
-      <div className="h-screen bg-gray-100 p-24">
-        <h1 className="text-4xl font-bold">Conteúdo Restante</h1>
-      </div>
     </main>
   );
 }
