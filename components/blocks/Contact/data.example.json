@@ -1,0 +1,80 @@
+{
+  "title": "Fale Conosco",
+  "subtitle": "Estamos prontos para atender você. Escolha a melhor forma de contato.",
+  "infoCards": [
+    {
+      "icon": "Mail",
+      "title": "Email",
+      "text": "contato@empresa.com",
+      "href": "mailto:contato@empresa.com"
+    },
+    {
+      "icon": "Phone",
+      "title": "Telefone",
+      "text": "+55 (11) 99999-9999",
+      "href": "tel:+5511999999999"
+    },
+    {
+      "icon": "MessageCircle",
+      "title": "WhatsApp",
+      "text": "Iniciar conversa",
+      "href": "https://wa.me/5511999999999"
+    }
+  ],
+  "form": {
+    "nameField": {
+      "label": "Nome",
+      "placeholder": "Seu nome completo"
+    },
+    "phoneField": {
+      "label": "Telefone",
+      "placeholder": "(00) 00000-0000"
+    },
+    "emailField": {
+      "label": "Email",
+      "placeholder": "seu@email.com"
+    },
+    "messageField": {
+      "label": "Mensagem",
+      "placeholder": "Como podemos ajudar?"
+    },
+    "submitButton": {
+      "text": "Enviar Mensagem",
+      "variant": "default"
+    }
+  },
+  "footer": {
+    "logo": {
+      "type": "text",
+      "content": "LogoMarca"
+    },
+    "copyright": "© 2025 LogoMarca. Todos os direitos reservados."
+  },
+  "styles": {
+    "--section-bg": "hsl(210 40% 98%)",
+    "--section-padding-y": "5rem",
+    "--section-text-align": "center",
+    "--title-color": "hsl(222 47% 11%)",
+    "--subtitle-color": "hsl(215 20% 65%)",
+    "--grid-gap": "4rem",
+    "--info-card-bg": "hsl(0 0% 100%)",
+    "--info-card-padding": "1.5rem",
+    "--info-card-radius": "0.5rem",
+    "--info-icon-color": "hsl(222 47% 11%)",
+    "--info-title-color": "hsl(222 47% 11%)",
+    "--info-text-color": "hsl(215 20% 65%)",
+    "--form-bg": "hsl(0 0% 100%)",
+    "--form-padding": "2rem",
+    "--form-radius": "0.75rem",
+    "--form-gap": "1.5rem",
+    "--label-color": "hsl(222 47% 11%)",
+    "--input-bg": "hsl(210 40% 98%)",
+    "--input-border-color": "hsl(214 32% 91%)",
+    "--input-text-color": "hsl(222 47% 11%)",
+    "--input-placeholder-color": "hsl(215 20% 65%)",
+    "--footer-text-color": "hsl(215 20% 65%)",
+    "--footer-logo-color": "hsl(222 47% 11%)",
+    "--primary": "hsl(222 47% 11%)",
+    "--primary-foreground": "hsl(210 40% 98%)"
+  }
+}
