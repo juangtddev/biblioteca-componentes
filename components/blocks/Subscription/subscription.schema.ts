@@ -24,7 +24,7 @@ const BenefitItemSchema = z.object({
 });
 
 // Schema para cada Card de Preço
-const PricingCardSchema = z.object({
+const SubscriptionCardSchema = z.object({
   // Parte Superior (com a imagem e overlay)
   top: z.object({
     imageUrl: z.string().url(),
@@ -45,13 +45,13 @@ const PricingCardSchema = z.object({
 });
 
 // Schema Principal
-export const pricingSchema = z.object({
+export const subscriptionSchema = z.object({
   // Cabeçalho do Bloco (opcional)
   title: z.string().optional(),
   subtitle: z.string().optional(),
 
   // Conteúdo (opcional)
-  cards: z.array(PricingCardSchema).optional(),
+  cards: z.array(SubscriptionCardSchema).optional(),
 
   // Estilos
   styles: z
@@ -95,4 +95,4 @@ export const pricingSchema = z.object({
 });
 
 // Extrai o tipo
-export type PricingData = z.infer<typeof pricingSchema>;
+export type SubscriptionData = z.infer<typeof subscriptionSchema>;

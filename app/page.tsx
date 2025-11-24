@@ -10,9 +10,9 @@ import { Features } from '@/components/blocks/Features';
 import { featuresSchema } from '@/components/blocks/Features/features.schema';
 import featuresData from '@/components/blocks/Features/data.example.json';
 
-import { Pricing } from '@/components/blocks/Pricing';
-import { pricingSchema } from '@/components/blocks/Pricing/pricing.schema';
-import pricingData from '@/components/blocks/Pricing/data.example.json';
+import { Subscription } from '@/components/blocks/Subscription';
+import { subscriptionSchema } from '@/components/blocks/Subscription/subscription.schema';
+import subscriptionData from '@/components/blocks/Subscription/data.example.json';
 
 import { HowItWorks } from '@/components/blocks/HowItWorks';
 import { howItWorksSchema } from '@/components/blocks/HowItWorks/how-it-works.schema';
@@ -35,7 +35,7 @@ export default function Home() {
   const validatedHeaderData = headerSchema.parse(headerData);
   const validatedHeroData = heroSchema.parse(heroData);
   const validatedFeaturesData = featuresSchema.parse(featuresData);
-  const validatedPricingData = pricingSchema.parse(pricingData);
+  const validatedSubscriptionData = subscriptionSchema.parse(subscriptionData);
   const validatedHowItWorksData = howItWorksSchema.parse(howItWorksData);
   const validatedCtaData = ctaSchema.parse(ctaData);
   const validatedContactData = contactSchema.parse(contactData);
@@ -46,7 +46,7 @@ export default function Home() {
       <Header data={validatedHeaderData} />
       <Hero data={validatedHeroData} />
       <Features data={validatedFeaturesData} />
-      <Pricing data={validatedPricingData} />
+      <Subscription data={validatedSubscriptionData} />
       <HowItWorks data={validatedHowItWorksData} />
       <Cta data={validatedCtaData} />
       <Contact data={validatedContactData} />

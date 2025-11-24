@@ -1,15 +1,15 @@
 import Link from 'next/link';
-import { type PricingData } from './pricing.schema';
+import { type SubscriptionData } from './subscription.schema';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 import { Icon } from '@/components/Icon'; // Reutilizamos nosso helper
 
 // Propriedades
-interface PricingProps {
-  data: PricingData;
+interface SubscriptionProps {
+  data: SubscriptionData;
 }
 
-export function Pricing({ data }: PricingProps) {
+export function Subscription({ data }: SubscriptionProps) {
   const { title, subtitle, cards, styles } = data;
 
   // Fallbacks
