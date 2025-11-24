@@ -1,0 +1,50 @@
+{
+  "icon": "Smartphone",
+  "title": "Baixe nosso App Agora",
+  "subtitle": "Tenha controle total na palma da sua mão. Disponível para iOS e Android.",
+  "buttons": [
+    {
+      "text": "App Store",
+      "href": "#ios",
+      "variant": "default",
+      "icon": "Apple"
+    },
+    {
+      "text": "Google Play",
+      "href": "#android",
+      "variant": "outline",
+      "icon": "Play"
+    }
+  ],
+  "stats": [
+    {
+      "icon": "Download",
+      "text": "+1 Milhão de Downloads"
+    },
+    {
+      "icon": "Star",
+      "text": "4.9 de Avaliação"
+    },
+    {
+      "icon": "ShieldCheck",
+      "text": "100% Seguro"
+    }
+  ],
+  "styles": {
+    "--section-bg": "hsl(210 40% 98%)",
+    "--section-padding-y": "5rem",
+    "--section-text-align": "center",
+    "--main-icon-color": "hsl(222 47% 11%)",
+    "--main-icon-size": "3rem",
+    "--title-color": "hsl(222 47% 11%)",
+    "--subtitle-color": "hsl(215 20% 65%)",
+    "--button-gap": "1rem",
+    "--stats-margin-top": "4rem",
+    "--stats-gap": "2rem",
+    "--stats-icon-color": "hsl(222 47% 11%)",
+    "--stats-text-color": "hsl(215 20% 65%)",
+    "--stats-divider-color": "hsl(214 32% 91%)",
+    "--primary": "hsl(222 47% 11%)",
+    "--primary-foreground": "hsl(210 40% 98%)"
+  }
+}
